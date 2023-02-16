@@ -84,10 +84,10 @@ p {
         font-size: 28px;
     }
     .bg_content_text {
-        max-width: 70%;
+        max-width: 90%;
         font-size: 18px;
     }
     .bg_content {
-        bottom: 10px;
+        bottom: 2px;
     }
 }
