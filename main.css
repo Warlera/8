@@ -1,15 +1,15 @@
 @font-face {
     font-family: "GT-Walsheim"; 
-    src: url("fonts/GT-Walsheim-Black-Trial.otf") format("truetype"); 
+    src: url("fonts2/GTWalsheimPro-Light.ttf") format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
 }
-@font-face {
-    font-family: "GT-Walsheim-text"; 
-    src: url("fonts/GT-Walsheim-Light-Trial.otf") format("truetype"); 
+/* @font-face {
+    font-family: "GT-Walsheim"; 
+    src: url("fonts2/GTWalsheimPro-Light.ttf") format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
-}
+} */
 body {
     margin: 0;
     padding: 0;
@@ -29,11 +29,11 @@ p {
 }
 .video_bg video {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     position: absolute;
     top: 0;
     left: 0;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
     object-fit: cover;
     z-index: 1;
 }
@@ -46,13 +46,17 @@ p {
     width: 100%;  
 }
 .bg_content {
-    z-index: 3;
+    z-index: 4;
     font-size: 30px;
     color: #000;
     text-align: center;
     position: absolute;
     bottom: 0;
-    max-width: 70%;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    margin-top: -250px;
 }
 .logo {
     max-width: 300px;
@@ -63,13 +67,27 @@ p {
 .bg_content_head {
     font-size: 34px;
     font-weight: 600;
-    margin: -15px;
 }
 .bg_content_text {
-    font-family: "GT-Walsheim-text";
+    max-width: 70%;
     font-size: 24px;
+    margin: 0 auto;
 }
-span {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 21.5px;
+@media (max-width: 600px) {
+    .logo {
+        max-width: 200px;
+    }
+    .circle {
+        max-width: 100px; 
+    }
+    .bg_content_head {
+        font-size: 28px;
+    }
+    .bg_content_text {
+        max-width: 70%;
+        font-size: 18px;
+    }
+    .bg_content {
+        bottom: 50px;
+    }
 }
