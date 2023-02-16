@@ -73,6 +73,23 @@ p {
     font-size: 24px;
     margin: 0 auto;
 }
+.audio {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.play,
+.pause{
+    max-width: 50px;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+    transition: 1s;
+}
 @media (max-width: 600px) {
     .logo {
         max-width: 200px;
@@ -84,10 +101,14 @@ p {
         font-size: 28px;
     }
     .bg_content_text {
-        max-width: 90%;
+        max-width: 70%;
         font-size: 18px;
     }
     .bg_content {
-        bottom: 10px;
+        bottom: 50px;
+    }
+    .play,
+    .pause{
+        max-width: 30px;
     }
 }
