@@ -112,3 +112,16 @@ p {
         max-width: 30px;
     }
 }
+.icons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: 100px;
+    left: 50px;
+    z-index: 4;
+    width: 100%;
+}
+.icons img{
+    max-width: 50px;
+}
