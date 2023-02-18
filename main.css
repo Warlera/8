@@ -90,19 +90,6 @@ p {
     display: none;
     transition: 1s;
 }
-.icons {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    top: 100px;
-    left: 50px;
-    z-index: 4;
-    width: 100%;
-}
-.icons img{
-    max-width: 50px;
-}
 @media (max-width: 600px) {
     .logo {
         max-width: 200px;
@@ -124,4 +111,17 @@ p {
     .pause{
         max-width: 30px;
     }
+}
+.icons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: 150px;
+    left: 50px;
+    z-index: 4;
+    width: 100%;
+}
+.icons img{
+    max-width: 50px;
 }
