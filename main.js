@@ -5,7 +5,10 @@ const player = document.querySelector('.audio'),
       next = document.querySelector('.next_btn')
 
 const songs = ['1','2','3']
-let songIndex = 0
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+let songIndex = getRandomInt(songs.length)
 function Song(x) {
     file.src = x +'.mp3'  
 }
@@ -23,6 +26,7 @@ function pauseSong() {
     pause.classList.add('hidden')
 }
 play.addEventListener('click', () => {
+    file.currentTime = Math.random() * (file.duration - 1) + 1;
     playSong();
 })
 pause.addEventListener('click', () => {
@@ -34,8 +38,10 @@ function nextSong() {
         songIndex = 0
     }
     Song(songs[songIndex])
+    playSong()
 }
  next.addEventListener('click', () => {
     nextSong()
     playSong()
 })
+file.addEventListener('ended', nextSong)
